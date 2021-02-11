@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trailer Main Page</title>
+</head>
+
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Godzilla vs Kong</h2>
+            <div class="toggle"></div>
+
+        </header>
+        <video src="video/Godzilla.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h2>Mega Hit</h2>
+            <h3>New Godzilla trailer</h3>
+            <p>Watch Godzilla New Trailer officially 2021</p>
+            <a href="#">Explore</a>
+        </div>
+
+        <ul class="social">
+            <li>
+                <a href=""><img src="resources/icons8-facebook-64.png" alt=""></a>
+            </li>
+            <li>
+                <a href=""><img src="resources/icons8-instagram-old-100.png" alt=""></a>
+            </li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">More Info</a></li>
+            <li><a href="#">Ticket Price</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle');
+        const showcase = document.querySelector('.showcase');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+    </script>
+
+</body>
+
+</html>
